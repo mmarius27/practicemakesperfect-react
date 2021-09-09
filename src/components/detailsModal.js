@@ -35,7 +35,7 @@ const Details = ({birthday, description, setDetailsInfo}) =>{
                 <span className="d-block">Birthday:</span>
                 <span className="d-block">Description:</span>
             </div>
-            <div className="modal-triger mx-2 p-2 rounded-100 w-100" onClick={handleShow}> 
+            <div className="modal-triger mx-2 p-2 rounded-100 w-85" onClick={handleShow}> 
                 <span className="d-block">{details.birthday}</span>
                 <span className="d-block">{details.description}</span>  
             </div>

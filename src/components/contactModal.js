@@ -35,7 +35,7 @@ const Contacts = ({email, phone, setContactInfo}) =>{
                 <span className="d-block">Email:</span>
                 <span className="d-block">Phone:</span>
             </div>
-            <div className="modal-triger mx-2 p-2 rounded-100 w-100" onClick={handleShow}> 
+            <div className="modal-triger mx-2 p-2 rounded-100 w-85" onClick={handleShow}> 
                 <span className="d-block">{contacts.email}</span>
                 <span className="d-block">{contacts.phone}</span>  
             </div>

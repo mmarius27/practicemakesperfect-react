@@ -2,12 +2,12 @@ import '../customcss.css'
 import { useState, useRef } from "react";
 import { Container, Modal, Button } from "react-bootstrap";
 
-const NameAndSurname = ({firstName, lastName, setFirstAndLastName}) =>{
+const ContactName = ({contactFirstName, contactSurname, setContactName}) =>{
 
     const firstNameInput = useRef();
     const lastNameInput = useRef();
     const [show, setShow] = useState(false);
-    const [names, setNames] = useState({"firstName":firstName, "lastName":lastName});
+    const [names, setNames] = useState({"firstName":contactFirstName, "lastName":contactSurname});
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -16,14 +16,14 @@ const NameAndSurname = ({firstName, lastName, setFirstAndLastName}) =>{
         let lastName = lastNameInput.current.value
 
         setNames({firstName, lastName})
-        setFirstAndLastName(firstName, lastName);
+        setContactName(firstName, lastName);
 
         setShow(false);
     }
     
     return(
         <Container className="d-flex">
-            <div className="align-text-right d-inline w-15 py-2 ">Name:</div>
+            <div className="align-text-right d-inline w-15 py-2 ">Contact Name:</div>
             <div className="modal-triger mx-2 p-2 rounded-100 w-85" onClick={handleShow}> 
                 {names.firstName} {names.lastName}
             </div>
@@ -51,4 +51,4 @@ const NameAndSurname = ({firstName, lastName, setFirstAndLastName}) =>{
     )
 }
 
-export default NameAndSurname
+export default ContactName

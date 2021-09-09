@@ -44,7 +44,7 @@ const Experience = ({type, educationList, setEducationList}) =>{
             <div className="align-text-right d-inline w-15 py-2 ">
                 <span className="d-block">{type}:</span>
             </div>
-            <Container className="m-0 p-0 d-block">
+            <Container className="m-0 p-0 d-block w-85">
             {list.map((item, index) => {
                 return (
                     <OneExpModal itemParam={item} index={index} setItem={setItem}/>

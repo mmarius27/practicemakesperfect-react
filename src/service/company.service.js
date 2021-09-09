@@ -43,7 +43,7 @@ class CompanyService{
             headers:{"Content-type":"application/json","Authorization":jwt}
         })
         .then(res =>{
-            return res.text().then(data => {return JSON.parse(data);});
+            return res.text().then(data => {console.log(data);});
         })
     }
 

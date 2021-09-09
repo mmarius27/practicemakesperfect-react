@@ -17,3 +17,16 @@ div.modal-triger:hover{
 .w-15{
     width: 15%;
 }
+.w-20{
+    width: 20%;
+}
+.w-85{
+    width: 85%;
+}
+.w-75{
+    width: 75%;
+}
+
+.prewrap{
+    white-space: pre-wrap
+}

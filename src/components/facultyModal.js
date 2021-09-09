@@ -34,7 +34,7 @@ const FacultyInfo = ({faculty, year, setFacultyInfo}) =>{
                 <span className="d-block">College:</span>
                 <span className="d-block">Year of study:</span>
             </div>
-            <div className="modal-triger mx-2 p-2 rounded-100 w-100" onClick={handleShow}> 
+            <div className="modal-triger mx-2 p-2 rounded-100 w-85" onClick={handleShow}> 
                 <span className="d-block">{info.faculty? info.faculty: "-"}</span>
                 <span className="d-block">{info.year}</span>  
             </div>

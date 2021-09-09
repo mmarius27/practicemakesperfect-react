@@ -40,7 +40,6 @@ const MyPostStudent = () =>{
     }, []);
 
     const postClicked = (postId) => {
-        console.log("POST CLICKED! "+ postId);
         history.push("/post/" + postId);
     }
 
